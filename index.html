@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Invoice</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            border-collapse: collapse;
+        }
+
+        body {
+            font-size: 14px;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        }
+
+        address{
+            margin-top: 15px;
+        }
+
+        h2 {
+            font-size: 28px;
+            color: #cccccc;
+        }
+
+        .container {
+            padding-top: 30px;
+        }
+
+        .invoice-head td {
+            padding: 8px 0;
+        }
+
+        .table th {
+            vertical-align: bottom;
+            font-weight: bold;
+            padding: 8px 0;
+            line-height: 20px;
+            text-align: left;
+        }
+
+        .table td {
+            line-height: 20px;
+            text-align: left;
+            vertical-align: top;
+            border-top: 1px solid #dddddd;
+            padding: 8px 0;
+            margin: 0;
+        }
+
+        .container {
+            background: #fefefe;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <table style="margin-left: auto; margin-right: auto" width="550">
+        <tr valign="top">
+            <!-- Organization Name / Date -->
+            <td>
+                <br><br>
+                <strong>To:</strong>
+                Marilou Senger
+                <br>
+                qbosco@hotmail.com
+                <br>
+                <br>
+                <strong>Date:</strong> Jun 6, 2017
+            </td>
+        </tr>
+        <tr valign="top">
+            <td>
+                <!-- Invoice Info -->
+                <p>
+
+                    <strong>Invoice Number:</strong> 2017-0000-0001<br>
+                </p>
+
+                <p>
+                    Starting balance: €5,00
+                </p>
+
+                <!-- Extra / VAT Information -->
+
+                <table width="100%" class="table" border="0">
+                    <tr>
+                        <th align="left">Description</th>
+                        <th align="right" style="text-align: right;">Amount</th>
+                        <th align="right">VAT %</th>
+                    </tr>
+
+                    <!-- Display The Invoice Items -->
+                    <tr>
+                        <td>
+                            Some dummy description
+                        </td>
+                        <td style="text-align: right;">
+                            €121,50
+                        </td>
+                        <td>
+                            21.5%
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Some dummy description
+                        </td>
+                        <td style="text-align: right;">
+                            €121,50
+                        </td>
+                        <td>
+                            21.5%
+                        </td>
+                    </tr>
+
+                    <!-- Display The Subtotal -->
+                    <tr style="border-top:2px solid #000;">
+                        <td style="text-align: right;"><strong>Subtotal</strong></td>
+                        <td style="text-align: right;"><strong>€243,00</strong></td>
+                        <td>&nbsp;</td>
+                    </tr>
+
+                    <!-- Display The Tax Details -->
+                    <tr style="border-top:2px solid #000;">
+                        <td style="text-align: right;">21.5% VAT over €243,00</td>
+                        <td style="text-align: right;">€52,25</td>
+                        <td>&nbsp;</td>
+                    </tr>
+
+                    <!-- Display The Final Total -->
+                    <tr style="border-top:2px solid #000;">
+                        <td style="text-align: right;"><strong>Total</strong></td>
+                        <td style="text-align: right;"><strong>€295,25</strong></td>
+                        <td>&nbsp;</td>
+                    </tr>
+
+                    <!-- Display The Used Balance -->
+                    <tr style="border-top:2px solid #000;">
+                        <td style="text-align: right;">Balance applied</td>
+                        <td style="text-align: right;">€5,00</td>
+                        <td>&nbsp;</td>
+                    </tr>
+
+                    <!-- Display The Total Due -->
+                    <tr style="border-top:2px solid #000;">
+                        <td style="text-align: right;"><strong>Total due</strong></td>
+                        <td style="text-align: right;"><strong>€290,25</strong></td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td style="border-top:none">
+                New account balance: €0,00
+            </td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
